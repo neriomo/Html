@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Formulario con un campo de texto y campos ocultos-->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formularios</title>
+  </head>
+  <body>
+      <h1> Formulario de retro alimentacion </h1>
+        <p>
+          Llene este formulario para ayudarnos a mejorar este sitio.
+        </p>
+        <!--esta etiqueta empieza el formulario,indica el metodo-->
+        <!--de enviar informacion e ubicacion-->
+        <!--de la secuencia de comandos del formulario formulario-->
+        <form  action="www.deitel.com" method="post">
+          <!--Las entradas ocultas tienen informacion que tambien se enviara-->
+
+          <input type="hidden" name="destinatario" value="deitel@deitel">
+          <input type="hidden" name="asunto" value="Formulario retroalimentacion">
+          <input type="hidden" name="redirigir" value="principal.html">
+          <p>
+            <label>Nombre:
+                <input type="text" name="nombre" size ="25" maxlength="30">
+            </label>
+          </p>
+
+          <p>
+            <!--El tipo de entrada submit se utiliza para enviar la informacion del formulario-->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reset">
+          </p>
+        </form>
+  </body>
+</html>
